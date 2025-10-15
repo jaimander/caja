@@ -3,43 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abriendo Spotify...</title>
+  <title>Abriendo aplicación...</title>
   <style>
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto;
-      display:flex; align-items:center; justify-content:center;
-      height:100vh; margin:0;
-      background:#f2f3f5; color:#222;
-    }
-    .card {
-      text-align:center;
-      max-width:400px;
-      padding:24px;
-      border-radius:16px;
-      background:#fff;
-      box-shadow:0 8px 24px rgba(0,0,0,.08);
-    }
-    a {
-      display:inline-block;
-      margin:6px;
-      padding:10px 14px;
-      border-radius:8px;
-      border:1px solid #ddd;
-      text-decoration:none;
-      color:#333;
-      font-size:15px;
-    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f9fafb; color:#333; }
+    .card{ text-align:center; max-width:400px; padding:24px; border-radius:16px; background:#fff; box-shadow:0 8px 24px rgba(0,0,0,.08); }
+    a{ display:inline-block; margin:6px; padding:10px 14px; border-radius:8px; border:1px solid #ddd; text-decoration:none; color:#333; }
   </style>
 
   <script>
     // ——————————————————————————
-    // ⚙️ CONFIGURACIÓN
+    // ⚙️ CONFIGURA ESTOS VALORES
     // ——————————————————————————
-    const URL_ANDROID_STORE = "https://play.google.com/store/apps/details?id=com.spotify.music";
-    const DEEP_LINK_ANDROID = "intent://open.spotify.com/#Intent;scheme=https;package=com.spotify.music;end";
-    const URL_IOS_STORE = "https://apps.apple.com/app/id324684580";
-    const DEEP_LINK_IOS = "spotify://";
-    const TIMEOUT_FAILSAFE  = 1800; // ms antes de asumir que no se abrió la app
+    const URL_ANDROID_STORE = "https://play.google.com/store/apps/details?id=com.netflix.mediaclient";
+    const DEEP_LINK_ANDROID = "intent://open#Intent;scheme=netflix;package=com.netflix.mediaclient;end";
+    const URL_IOS_STORE = "https://apps.apple.com/app/id363590051"; // Netflix App Store ID
+    const DEEP_LINK_IOS = "nflx://"; // esquema oficial de Netflix
+
+    const TIMEOUT_FAILSAFE  = 2000; // ms a esperar antes de mandar a la store
     // ——————————————————————————
 
     function detectPlatform(){
@@ -57,6 +37,7 @@
         const start = Date.now();
         window.location = DEEP_LINK_ANDROID;
 
+        // Si después de TIMEOUT_FAILSAFE ms no cambió la visibilidad → abrir Play Store
         setTimeout(() => {
           if (Date.now() - start < TIMEOUT_FAILSAFE + 500) {
             window.location = URL_ANDROID_STORE;
@@ -72,14 +53,16 @@
           }
         }, TIMEOUT_FAILSAFE);
 
+        // Abrir la app por esquema personalizado
         window.location = DEEP_LINK_IOS;
 
+        // Si el usuario vuelve o cancela → limpiar
         window.addEventListener('pagehide', () => clearTimeout(timeout));
         window.addEventListener('blur', () => clearTimeout(timeout));
 
       } else {
-        document.getElementById("status").textContent =
-          "Abre este enlace desde tu teléfono para probar la redirección a Spotify:";
+        // Fallback para escritorio u otras plataformas
+        document.getElementById("status").textContent = "Abre este enlace desde tu teléfono para instalar la app:";
         document.getElementById("links").style.display = "block";
       }
     }
@@ -89,16 +72,14 @@
 </head>
 <body>
   <div class="card">
-    <h2>Abriendo Spotify...</h2>
+    <h2>Abriendo la aplicación...</h2>
     <p id="status">Si no se abre automáticamente, elige tu tienda:</p>
     <div id="links" style="display:none;">
-      <a href="https://play.google.com/store/apps/details?id=com.spotify.music">Google Play</a>
-      <a href="https://apps.apple.com/app/id324684580">App Store</a>
-      <a href="https://open.spotify.com/">Versión web</a>
+      <a href="#" onclick="window.location=URL_ANDROID_STORE">Google Play</a>
+      <a href="#" onclick="window.location=URL_IOS_STORE">App Store</a>
+      <a href="#" onclick="window.location=URL_FALLBACK_WEB">Versión web</a>
     </div>
-    <p style="font-size:13px; color:#666; margin-top:12px;">
-      Si estás en iPhone, abre este enlace desde Safari.
-    </p>
+    <p style="font-size:13px; color:#666; margin-top:12px;">Si estás en iPhone, asegúrate de abrir este enlace desde Safari.</p>
   </div>
 </body>
 </html>
