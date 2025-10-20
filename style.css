@@ -105,3 +105,10 @@ body {
     transform: translateX(0%);
   }
 }
+
+
+#caja-de-texto{
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 10%;
+}
