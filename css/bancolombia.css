@@ -64,7 +64,7 @@ p {
 }
 
 #contenedor-logos {
-  margin-top: 100px;
+  margin-top: 50px;
   /*background-color: #ffb9d1;*/
   width: 100%;
   display: flex; /* hace que el hijo (logo-plataforma) pueda alinearse dentro */
