@@ -14,27 +14,27 @@
   font-style: italic;
 }
 
-/*
+
 @font-face {
     font-family: 'Exposure VAR';
-    src: url('/assets/fonts/eposure/ExposureVAR-Exposure.woff2') format('woff2'),
-        url('/assets/fonts/exposure/ExposureVAR-Exposure.woff') format('woff');
+    src: url('https://dentrodelacaja.com/assets/fonts/eposure/ExposureVAR-Exposure.woff2') format('woff2'),
+        url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-Exposure.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-    */
+    
 
-    /*
+    
 @font-face {
     font-family: 'Exposure VAR Italic';
-    src: url('/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff2') format('woff2'),
-        url('/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff') format('woff');
+    src: url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff2') format('woff2'),
+        url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-    */
+    
 
 body {
   background: black;
@@ -43,7 +43,7 @@ body {
 }
 
 #contenedor-general {
-  font-family: 'ExposureItalic';
+  font-family: 'Exposure VAR Italic';
   font-variation-settings: "EXPO" -40;
   width: 80%;
   margin-left: 10%;
@@ -53,7 +53,7 @@ body {
  }
 
 p {
-  font-family: 'Exposure';
+  font-family: 'Exposure VAR';
   font-variation-settings: "EXPO" -10;
 }
 
