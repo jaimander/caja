@@ -3,7 +3,7 @@ let puertaDer = document.getElementById("puertaDer");
 let chapaIzq = document.getElementById("chapaIzq");
 let chapaDer = document.getElementById("chapaDer");
 
-chapaIzq.onclick = function () {
+puertaIzq.onclick = function () {
   if (puertaIzq.classList.contains("abrir")) {
     puertaIzq.classList.remove("abrir");
     puertaIzq.classList.add("cerrar");
@@ -13,7 +13,7 @@ chapaIzq.onclick = function () {
   }
 };
 
-chapaDer.onclick = function () {
+puertaDer.onclick = function () {
   if (puertaDer.classList.contains("abrir")) {
     puertaDer.classList.remove("abrir");
     puertaDer.classList.add("cerrar");
