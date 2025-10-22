@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Exposure";
+  font-family: "ExposureVAR";
   src: url("https://dentrodelacaja.com/assets/fonts/205TF-Exposure-ExposureVAR.ttf")
+    format("truetype");
+  font-weight: 100 900; /* Rango completo */
+}
+
+@font-face {
+  font-family: "ExposureVARItalic";
+  src: url("https://dentrodelacaja.com/assets/fonts/205TF-Exposure-ExposureVARItalic.ttf")
     format("truetype");
   font-weight: 100 900; /* Rango completo */
 }
@@ -44,15 +51,15 @@ body {
 }
 
 h1 {
-  font-family: "Exposure";
+  font-family: "ExposureVARItalic";
   font-variation-settings: "EXPO" -40;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 p {
-  font-family: "Exposure";
+  font-family: "ExposureVAR";
   font-variation-settings: "EXPO" -10;
-  font-style: normal;
+ /* font-style: normal;*/
 }
 
 #contenedor-logos {
