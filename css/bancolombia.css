@@ -59,12 +59,13 @@ h1 {
 p {
   font-family: "ExposureVAR";
   font-variation-settings: "EXPO" -10;
+  font-size: 20px;
   /* font-style: normal;*/
 }
 
 #contenedor-logos {
   margin-top: 100px;
-  background-color: #ffb9d1;
+  /*background-color: #ffb9d1;*/
   width: 100%;
   display: flex; /* hace que el hijo (logo-plataforma) pueda alinearse dentro */
   justify-content: space-around; /* opcional: distribuye espacio */
