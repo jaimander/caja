@@ -15,6 +15,7 @@ body {
   position: absolute;
   background-color: #774aff;
   z-index: 2;
+ /* visibility: hidden;*/
 }
 
 #puertaArr,
@@ -23,22 +24,27 @@ body {
   height: 50%;
   position: absolute;
   background-color: #4e2cb6;
+  /*visibility: hidden;*/
 }
 
 #puertaIzq {
   left: 0;
+  transform: translateX(-5%);
 }
 
 #puertaDer {
   right: 0;
+    transform: translateX(5%);
 }
 
 #puertaArr {
   top: 0;
+  transform: translateY(0%);
 }
 
 #puertaAba {
   bottom: 0;
+  transform: translateY(5%);
 }
 
 #puertaIzq:hover,
@@ -243,4 +249,31 @@ h1 {
 
 .link:hover {
   cursor: pointer;
+}
+
+
+#halo-div {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background: white;
+  border: 2px solid #774aff;
+}
+
+/* halo en borde superior mitad izquierda */
+#halo-div::before {
+  content: "";
+  position: absolute;
+  top: -4px;       /* sube ligeramente sobre el borde */
+  left: 0;         /* empieza desde el borde izquierdo */
+  width: 50%;      /* mitad izquierda */
+  height: 6px;     /* grosor del halo */
+  background: radial-gradient(
+    circle at center,
+    rgba(119, 74, 255, 0.9),
+    rgba(119, 74, 255, 0.1) 70%,
+    transparent 100%
+  );
+  filter: blur(6px);     /* suaviza el halo */
+  pointer-events: none;  /* evita interferir con clics */
 }

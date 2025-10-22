@@ -6,10 +6,10 @@ let puertaAba = document.getElementById("puertaAba");
 let chapaIzq = document.getElementById("chapaIzq");
 let chapaDer = document.getElementById("chapaDer");
 
-puertaIzq.classList.add("cerrar");
-puertaDer.classList.add("cerrar");
-puertaArr.classList.add("cerrar");
-puertaAba.classList.add("cerrar");
+puertaIzq.classList.remove("cerrar");
+puertaDer.classList.remove("cerrar");
+puertaArr.classList.remove("cerrar");
+puertaAba.classList.remove("cerrar");
 
 puertaIzq.onclick = function () {
   if (puertaIzq.classList.contains("abrir")) {
