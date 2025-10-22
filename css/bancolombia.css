@@ -1,7 +1,7 @@
-
 @font-face {
   font-family: "Exposure";
-  src: url("https://dentrodelacaja.com/assets/fonts/205TF-Exposure-ExposureVAR.ttf") format("truetype");
+  src: url("https://dentrodelacaja.com/assets/fonts/205TF-Exposure-ExposureVAR.ttf")
+    format("truetype");
   font-weight: 100 900; /* Rango completo */
   font-style: normal;
 }
@@ -14,27 +14,27 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Exposure VAR";
+  src: url("https://dentrodelacaja.com/assets/fonts/eposure/ExposureVAR-Exposure.woff2")
+      format("woff2"),
+    url("https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-Exposure.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'Exposure VAR';
-    src: url('https://dentrodelacaja.com/assets/fonts/eposure/ExposureVAR-Exposure.woff2') format('woff2'),
-        url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-Exposure.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Exposure VAR Italic";
+  src: url("https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff2")
+      format("woff2"),
+    url("https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
-    
-
-    
-@font-face {
-    font-family: 'Exposure VAR Italic';
-    src: url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff2') format('woff2'),
-        url('https://dentrodelacaja.com/assets/fonts/exposure/ExposureVAR-ExposureItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-    
 
 body {
   background: black;
@@ -43,17 +43,20 @@ body {
 }
 
 #contenedor-general {
-  font-family: 'ExposureItalic';
-  font-variation-settings: "EXPO" -40;
   width: 80%;
   margin-left: 10%;
   margin-top: 100px;
   height: 100vh;
   color: white;
- }
+}
+
+h1 {
+  font-family: "ExposureItalic";
+  font-variation-settings: "EXPO" -40;
+}
 
 p {
-  font-family: 'Exposure';
+  font-family: "Exposure";
   font-variation-settings: "EXPO" -10;
 }
 
