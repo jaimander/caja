@@ -3,26 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abrir Netflix</title>
-  <style>
-    body { 
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto; 
-      display:flex; align-items:center; justify-content:center; 
-      height:100vh; margin:0; background:#f9fafb; color:#333; 
-    }
-    .card{ 
-      text-align:center; max-width:400px; padding:24px; border-radius:16px; 
-      background:#fff; box-shadow:0 8px 24px rgba(0,0,0,.08); 
-    }
-    button,a{ 
-      display:inline-block; margin:8px; padding:10px 16px; 
-      border-radius:8px; border:1px solid #ddd; background:#fff; 
-      text-decoration:none; color:#333; font-size:15px; cursor:pointer;
-    }
-    button:hover,a:hover{ background:#f0f0f0; }
-  </style>
+  <title>Bancolombia: 150 años haciendo historia</title>
+  <link rel="stylesheet" href="css/bancolombia.css" />
+  <script src="js/bancolombia.js" defer></script>
 </head>
 <body>
+  <div id="contenedor-general">
+    <h1>Bancolombia: 150 años haciendo historia</h1>
+    <p>Descarga la aplicación con contenido en Realidad Aumentada según tu dispositivo.</p>
+    <div id="contenedor-logos">
+      <a href="https://apps.apple.com/app/id363590051" target="_blank"><img class="logo-plataforma" src="assets/appstore.png"/></a>
+      <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient" target="_blank"><img class="logo-plataforma" src="assets/playstore.png"/>
+    </div>
+    
+    
+  </div>
+  <!--
   <div class="card">
     <h2>Esta es una página de prueba usando los links de descarga de Netflix</h2>
     <p>Puedes intentar abrir la app o ir a la tienda para descargarla.</p>
@@ -30,39 +26,8 @@
     <a href="https://apps.apple.com/app/id363590051" target="_blank">Ir al App Store</a>
     <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient" target="_blank">Ir a Google Play</a>
   </div>
-
-  <script>
-    const DEEP_LINK_IOS = "nflx://";
-    const DEEP_LINK_ANDROID = "intent://open#Intent;scheme=netflix;package=com.netflix.mediaclient;end";
-    const URL_ANDROID_STORE = "https://play.google.com/store/apps/details?id=com.netflix.mediaclient";
-    const URL_IOS_STORE = "https://apps.apple.com/app/id363590051";
-
-    function detectPlatform(){
-      const ua = navigator.userAgent || navigator.vendor || "";
-      if (/android/i.test(ua)) return "android";
-      if (/iPad|iPhone|iPod/.test(ua)) return "ios";
-      return "other";
-    }
-
-    function openApp(){
-      const platform = detectPlatform();
-      const now = Date.now();
-
-      if (platform === "android") {
-        window.location = DEEP_LINK_ANDROID;
-        setTimeout(() => {
-          if (Date.now() - now < 1500) window.location = URL_ANDROID_STORE;
-        }, 1200);
-      } 
-      else if (platform === "ios") {
-        // Safari solo permite abrir deep links tras interacción
-        window.location = DEEP_LINK_IOS;
-        // No se puede detectar fallo, así que el usuario usa el botón de fallback
-      } 
-      else {
-        alert("Abre este enlace desde tu celular para probar la app.");
-      }
-    }
-  </script>
+  -->
+  
+  
 </body>
 </html>
