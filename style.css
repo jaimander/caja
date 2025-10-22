@@ -207,22 +207,32 @@ body {
 
 #contenedor-general {
   position: absolute;
-  left: 25%;
-  top: 0;
-  width: 50%;
-  height: 100%;
+  left: 20%;
+  top: 10%;
+  width: 60%;
+  height: 80%;
   color: #774aff;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   justify-content: center; /* centra horizontalmente */
-  align-items: center; /* centra verticalmente */
 }
+
+
 
 h1 {
   font-weight: 100;
-  text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
+
+@media only screen and (max-width: 1000px) {
+ h1{
+    font-size: 30px;
+ }
+}
+
+
+
 
 .link{
   z-index: -20;
