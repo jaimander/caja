@@ -44,7 +44,7 @@ body {
 
 #contenedor-general {
   font-family: 'Exposure VAR Italic';
-  font-variation-settings: "EXPO" -40;
+  /*font-variation-settings: "EXPO" -40;*/
   width: 80%;
   margin-left: 10%;
   margin-top: 100px;
