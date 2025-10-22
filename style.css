@@ -216,8 +216,8 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center; /* centra horizontalmente */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 5%;
   padding-right: 5%;
   
