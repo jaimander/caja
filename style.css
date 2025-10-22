@@ -207,21 +207,26 @@ body {
 
 #contenedor-general {
   position: absolute;
-  left: 20%;
+  left: 10%;
   top: 10%;
-  width: 60%;
+  width: 70%;
   height: 80%;
   color: #774aff;
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   justify-content: center; /* centra horizontalmente */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  
 }
 
 
 
 h1 {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 50px;
 }
 
@@ -236,7 +241,7 @@ h1 {
 
 .link{
   z-index: -20;
-  /*font-weight: 800;*/
+  font-weight: 800;
   text-decoration: none;
   color: #774aff;
   text-decoration: underline;
