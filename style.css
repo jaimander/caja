@@ -252,28 +252,4 @@ h1 {
 }
 
 
-#halo-div {
-  position: relative;
-  width: 300px;
-  height: 150px;
-  background: white;
-  border: 2px solid #774aff;
-}
 
-/* halo en borde superior mitad izquierda */
-#halo-div::before {
-  content: "";
-  position: absolute;
-  top: -4px;       /* sube ligeramente sobre el borde */
-  left: 0;         /* empieza desde el borde izquierdo */
-  width: 50%;      /* mitad izquierda */
-  height: 6px;     /* grosor del halo */
-  background: radial-gradient(
-    circle at center,
-    rgba(119, 74, 255, 0.9),
-    rgba(119, 74, 255, 0.1) 70%,
-    transparent 100%
-  );
-  filter: blur(6px);     /* suaviza el halo */
-  pointer-events: none;  /* evita interferir con clics */
-}
