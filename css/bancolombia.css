@@ -158,4 +158,18 @@ a:hover {
   top: 0;
   left: 10px;
   font-size: 100px;
+  z-index: 10;
+  margin: 0;
+}
+
+.linea-morada{
+  height: 2px;
+  border-style: none;
+  background-color: #B263D6;
+}
+
+.linea-amarilla{
+  height: 2px;
+  border-style: none;
+  background-color: #FFDB00;
 }
