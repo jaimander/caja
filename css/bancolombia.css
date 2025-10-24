@@ -65,6 +65,7 @@ p {
 
 #contenedor-logos {
   margin-top: 50px;
+  margin-bottom: 100px;
   /*background-color: #ffb9d1;*/
   width: 100%;
   display: flex; /* hace que el hijo (logo-plataforma) pueda alinearse dentro */
@@ -116,3 +117,45 @@ a:hover {
   background: #f0f0f0;
 }
 */
+
+#contenedor-paginas{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  /*background-color: aqua;*/
+  flex-wrap: wrap;
+}
+
+#contenedor-paginas > div{
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 1px;
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  position: relative;
+}
+
+#contenedor-paginas > div img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.negrilla{
+  font-family: "ExposureVARItalic";
+  font-variation-settings: "EXPO" -40;
+}
+
+.pag{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 100px;
+}
