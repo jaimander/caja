@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+body {
+  font-family: "Funnel Display";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+
+#caja-de-texto {
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#contenedor-general {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 80%;
+  color: #774aff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+.link {
+  z-index: -20;
+  font-weight: 800;
+  text-decoration: none;
+  color: #774aff;
+  text-decoration: underline;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+
