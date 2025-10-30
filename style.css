@@ -1,11 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap");
 
+@font-face {
+  font-family: "RopaSansProRegular";
+  src: url("./assets/fonts/RopaSans/RopaSansPro/RopaSansPro-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RopaSansProItalic";
+  src: url("./assets/fonts/RopaSans/RopaSansPro/RopaSansPro-Italic.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+.saludo {
+  font-size: 70px;
+}
+
+.saludo:hover {
+}
+
 body {
-  font-family: "Funnel Display";
+  font-family: "RopaSansProRegular";
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+
 }
 
 #puertaIzq,
@@ -13,9 +35,20 @@ body {
   width: 50%;
   height: 100%;
   position: absolute;
-  background-color: #774aff;
+  /* background-color: #774aff;*/
+
   z-index: 2;
- /* visibility: hidden;*/
+  /* visibility: hidden;*/
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #444cf7 0,
+    #444cf7 1px,
+    #e5e5f7 0,
+    #e5e5f7 50%
+  );
 }
 
 #puertaArr,
@@ -23,8 +56,27 @@ body {
   width: 100%;
   height: 50%;
   position: absolute;
-  background-color: #4e2cb6;
+  /*background-color: #4f2cb6;*/
+
   /*visibility: hidden;*/
+
+  /*
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 5px 5px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #0e19fa 0,
+    #0e19fa 1px,
+    #e5e5f7 0,
+    #e5e5f7 50%
+  );
+  */
+
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(45deg, #444cf7 50%, #e5e5f7 50%);
+  background-size: 15px 15px;
 }
 
 #puertaIzq {
@@ -34,7 +86,7 @@ body {
 
 #puertaDer {
   right: 0;
-    transform: translateX(5%);
+  transform: translateX(5%);
 }
 
 #puertaArr {
@@ -217,7 +269,8 @@ body {
   top: 50%;
   width: 70%;
   height: 80%;
-  color: #774aff;
+  /*color: #774aff;*/
+  color: black;
   overflow-y: auto;
   overflow-x: hidden;
   padding-left: 5%;
@@ -243,13 +296,16 @@ h1 {
   z-index: -20;
   font-weight: 800;
   text-decoration: none;
-  color: #774aff;
-  text-decoration: underline;
+  /*color: #774aff;*/
+  color: rgb(0, 0, 0);
+  /*text-decoration: underline;*/
+  font-family: "RopaSansProRegular";
+}
+
+.link:hover {
+  font-family: "RopaSansProItalic";
 }
 
 .link:hover {
   cursor: pointer;
 }
-
-
-
