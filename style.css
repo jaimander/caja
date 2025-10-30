@@ -14,15 +14,41 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "LektonRegular";
+  src: url("./assets/fonts/Lekton/Lekton-Regular.ttf")
+    format("truetype");
+ 
+}
+
+@font-face {
+  font-family: "LektonItalic";
+  src: url("./assets/fonts/Lekton/Lekton-Italic.ttf")
+    format("truetype");
+
+}
+
+@font-face {
+  font-family: "LektonBold";
+  src: url("./assets/fonts/Lekton/Lekton-Bold.ttf")
+    format("truetype");
+
+}
+
+
 .saludo {
   font-size: 70px;
+  font-weight: 200;
+  font-family: "LektonRegular";
+  text-decoration:underline;
 }
 
 .saludo:hover {
+ 
 }
 
 body {
-  font-family: "RopaSansProRegular";
+  font-family: "LektonRegular";
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -300,13 +326,14 @@ h1 {
   /*color: #774aff;*/
   color: rgb(0, 0, 0);
   /*text-decoration: underline;*/
-  font-family: "RopaSansProRegular";
+  font-family: "LektonItalic";
 }
 
 .link:hover {
-  font-family: "RopaSansProItalic";
+  font-family: "LektonRegular";
 }
 
 .link:hover {
   cursor: pointer;
+  outline-style: solid;
 }
