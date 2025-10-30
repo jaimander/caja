@@ -330,7 +330,7 @@ p {
 
 .link:hover {
   cursor: pointer;
-  outline-width: 1px;
+  outline-width: 2px;
   outline-style: solid;
  
 }
