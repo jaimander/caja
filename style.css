@@ -74,11 +74,12 @@ body {
   background-size: 10px 10px;
   background-image: repeating-linear-gradient(
     45deg,
-    #166f4a 0,
-    #166f4a 1px,
+    #14a468 0,
+    #14a468 1px,
     #e5f7ef 0,
-    #e5e5f7 50%
+    #e5f7ef 50%
   );
+ 
 }
 
 #puertaArr,
@@ -96,10 +97,10 @@ body {
   background-size: 5px 5px;
   background-image: repeating-linear-gradient(
     -45deg,
-    #166f4a 0,
-    #166f4a 1px,
+    #039156 0,
+    #039156  1px,
     #e5f7ef 0,
-    #e5e5f7 50%
+    #e5f7ef 50%
   );
   
 /*
@@ -328,11 +329,11 @@ p {
 
   text-decoration: none;
   /*color: #774aff;*/
-  color: rgb(0, 0, 0);
+  color:#ffa406;
   /*text-decoration: underline;*/
    outline-style:dotted;
    outline-width: 1px;
-   outline-color: #d36d08;
+   outline-color: #ffa406;
 }
 
 
@@ -340,5 +341,6 @@ p {
   cursor: pointer;
   outline-width: 2px;
   outline-style: solid;
- 
+  outline-color: #ffa406;
+  
 }
