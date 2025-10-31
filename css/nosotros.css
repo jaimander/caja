@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "AlphaLyrae";
+  src: url("../assets/fonts/AlphaLyrae/AlphaLyrae-Medium.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+body {
+  font-family: "AlphaLyrae";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #ffffff;*/
+  font-weight: 100;
+
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 5px 5px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #ffa406 0,
+    #ffa406 1px,
+    #ffffff 0,
+    #ffffff 50%
+  );
+}
+
+#contenedor-general {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 80%;
+  /*color: #774aff;*/
+  color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+  color: #14a468;
+  outline-style: solid;
+  outline-color: #14a468;
+  display: inline-block;
+  background-color: white;
+  padding: 5px;
+  outline-width: 2px;
+}
+
+p{
+  color: #14a468;
+  outline-style: solid;
+  outline-color: #14a468;
+  background-color: white;
+  padding: 5px;
+  outline-width: 2px;
+  font-size: 50px;
+}
