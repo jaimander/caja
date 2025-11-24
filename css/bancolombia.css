@@ -13,6 +13,18 @@
 }
 
 
+/* ------ */
+
+@font-face {
+  font-family: "AlphaLyrae";
+  src: url("/assets/fonts/AlphaLyrae/AlphaLyrae-Medium.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+
+/* ------ */
+
 
 /*
 @font-face {
@@ -48,8 +60,9 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-top: 100px;
-  height: 100vh;
+  /*height: 100vh;*/
   color: white;
+  position: relative;
 }
 
 h1 {
@@ -181,3 +194,25 @@ a:hover {
   border-style: none;
   background-color: #FFDB00;
 }
+
+footer{
+  width: 95%;
+  text-align: right;
+  color: white;
+  position: relative;
+}
+
+footer p {
+  font-family: "AlphaLyrae";
+  font-size: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #14a468;
+}
+
+footer a:hover{
+  color:#ffa406;
+}
+
