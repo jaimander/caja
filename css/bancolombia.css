@@ -195,6 +195,13 @@ a:hover {
   background-color: #FFDB00;
 }
 
+.linea-amarilla{
+  height: 2px;
+  border-style: none;
+  background-color: #ffffff;
+}
+
+
 footer{
   width: 95%;
   text-align: right;
